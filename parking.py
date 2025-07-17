@@ -34,7 +34,7 @@ accuracy = np.mean(y_pred == test_y)
 print(f'Accuracy: {accuracy * 100:.2f}%')
 
 #test
-test_image_path = r' clf-data\not_empty\00000000_00000056.jpg'
+test_image_path = r'clf-data\not_empty\00000000_00000056.jpg'
 test_image = imread(test_image_path)
 test_image = resize(test_image, (15, 15)).flatten()
 predicted_label = model.predict([test_image])
